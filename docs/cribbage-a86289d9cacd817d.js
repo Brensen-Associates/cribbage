@@ -621,7 +621,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('cribbage-624eb6f334e63c71_bg.wasm', import.meta.url);
+        input = new URL('cribbage-a86289d9cacd817d_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 

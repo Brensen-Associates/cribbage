@@ -10,9 +10,14 @@ fn gabe_state() -> Html {
 
     html! {
         <div>
-            <button {onclick}>{"Add +1"}</button>
+            <button
+                class="border-2 border-black rounded-md py-1 px-2"
+                {onclick}
+            >
+                {"Add +1"}
+            </button>
             <p>
-                <b>{ "Counter: " }</b>
+                <b class="text-red-700">{ "Counter: " }</b>
                 { *counter }
             </p>
         </div>
@@ -22,10 +27,10 @@ fn gabe_state() -> Html {
 #[function_component(App)]
 fn app() -> Html {
     html! {
-        <>
+        <div class="p-6">
             <h1>{ "Click the button!" }</h1>
             <GabeState />
-        </>
+        </div>
     }
 }
 

@@ -17,7 +17,7 @@ fn gabe_state() -> Html {
                 {"Add +1"}
             </button>
             <p>
-                <b class="text-red-700">{ "Counter: " }</b>
+                <b class="text-blue-400">{ "Counter: " }</b>
                 { *counter }
             </p>
         </div>
